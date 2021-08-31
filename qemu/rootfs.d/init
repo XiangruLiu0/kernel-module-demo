@@ -1,0 +1,10 @@
+#!/bin/sh
+mount -t proc none /proc
+mount -t sysfs none /sys
+mdev -d
+touch /dev/null
+ls -d /usr/lib/modules/* | xargs /sbin/insmod
+sleep 3
+cd /data
+# ./interact.o
+exec /bin/sh

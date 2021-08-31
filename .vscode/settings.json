@@ -1,0 +1,17 @@
+{
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 2 ,ColumnLimit: 0}",
+    "files.associations": {
+        "module.h": "c",
+        "stat.h": "c",
+        "time.h": "c",
+        "math64.h": "c",
+        "seqlock.h": "c",
+        "preempt.h": "c",
+        "spinlock.h": "c",
+        "dev.h": "c",
+        "string": "c",
+        "unistd.h": "c",
+        "unistd_64_x32.h": "c",
+        "unistd_64.h": "c"
+    }
+}

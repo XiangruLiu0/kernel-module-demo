@@ -1,0 +1,40 @@
+{
+    "env": {
+        "kernelSourcePath": "/root/kern/linux-source-5.8.0",
+        "libName": "sample"
+    },
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/module/**",
+                "${workspaceFolder}/user/lib/include/**",
+                "/usr/include",
+                "/usr/include/x86_64-linux-gnu",
+                "/usr/local/include",
+                "/usr/lib/gcc/x86_64-linux-gnu/10/include",
+                "${kernelSourcePath}",
+                "${kernelSourcePath}/include",
+                "${kernelSourcePath}/arch/x86/include",
+                "${kernelSourcePath}/arch/x86/include/generated",
+                "${kernelSourcePath}/arch/x86/include/asm"
+            ],
+            "forcedInclude": [
+                "${kernelSourcePath}/include/linux/kconfig.h",
+                "${kernelSourcePath}/include/linux/compiler_types.h",
+                "${kernelSourcePath}/include/types.h"
+            ],
+            "defines": [
+                "__GNUC__",
+                "__KERNEL__",
+                "MODULE",
+                "DEBUG"
+            ],
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
